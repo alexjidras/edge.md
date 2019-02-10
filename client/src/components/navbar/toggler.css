@@ -1,0 +1,86 @@
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 31px;
+    
+}
+
+.switch input {display:none;}
+
+.lang-slider {
+    overflow: hidden;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fdfdfd;
+  border: 1px solid #ccc;
+  border-radius: 34px;
+  -webkit-transition: .5s linear;
+  transition: .2s linear;
+}
+
+.lang-slider:before {
+  position: absolute;
+  content: "";
+  height: 21px;
+  width: 21px;
+  left: 5px;
+  bottom: 4px;
+  background-color: #e6e6e6;
+   /*background-image: url(images/ro.png);*/
+  background-size: contain; 
+  border-radius: 50%;
+  -webkit-transition: .3s linear;
+  transition: .2s linear;
+}
+
+input:checked + .lang-slider:before {
+   /*background-image: url(images/ru.png);*/
+  background-size: contain; 
+  -webkit-transform: translateX(35px);
+  -ms-transform: translateX(35px);
+  transform: translateX(36px);
+}
+input:checked ~ .unchecked,
+input ~ .unchecked,
+input ~ .checked {
+	color: black;
+  position: absolute;
+  font-weight: 600;
+  opacity: 0;
+  top: 5px;
+  
+}
+
+.unchecked {
+  right: 13px;
+  -webkit-transition: visibility .1s;
+  transition: opacity .05s ;
+}
+.checked {
+  left: 13px;
+  -webkit-transition: visibility .05s;
+  transition: opacity .05s ;
+
+}
+input:checked ~ .checked,
+input ~ .unchecked {
+  opacity: 1;
+}
+.lang-span {
+    position: absolute;
+    top: 3px;
+    font-weight: 600;
+    left: 13px;
+    transition: left .2s linear;
+}
+.lang-first {
+    margin-right: 35px;
+    font-size: 14px;
+
+}

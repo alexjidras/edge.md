@@ -1,0 +1,1 @@
+module.exports = {ro: ["Chișinău", "Soroca"], ru: ["Кишинёв" , "Сорока"], distance: [0,200]}

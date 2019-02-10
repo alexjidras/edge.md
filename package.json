@@ -1,0 +1,43 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "./node_modules/.bin/forever server.js",
+    "stop": "taskkill -F -IM node.exe"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "chalk": "^2.4.2",
+    "connect-mongodb-session": "^2.0.3",
+    "cookie-parser": "^1.0.1",
+    "cors": "^2.8.4",
+    "csurf": "^1.9.0",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "express-session": "^1.0.2",
+    "forever": "^0.15.3",
+    "fs-extra": "^7.0.1",
+    "helmet": "^3.13.0",
+    "joi": "^13.6.0",
+    "jsonwebtoken": "^8.4.0",
+    "moment": "^2.22.2",
+    "mongoose": "^4.11.8",
+    "mongoose-plugin-autoinc": "^1.1.9",
+    "mongoose-unique-validator": "^2.0.1",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.1",
+    "referrer-policy": "^1.1.0",
+    "request": "^2.87.0",
+    "sharp": "^0.21.1",
+    "validator": "^10.11.0",
+    "ws": "^3.3.3"
+  },
+  "engines": {
+    "node": "v10.15.0"
+  }
+}
